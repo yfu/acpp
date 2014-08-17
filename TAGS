@@ -1,0 +1,175 @@
+
+0-10.cpp,11
+main(4,25
+
+0-2.cpp,15
+int main(3,21
+
+0-3.cpp,15
+int main(3,21
+
+0-6.cpp,15
+int main(3,21
+
+0-7.cpp,15
+int main(2,20
+
+0-8.cpp,15
+int main(2,20
+
+0-9.cpp,14
+int main(1,0
+
+1-0.cpp,15
+int main(4,39
+
+1-3.cpp,15
+int main(4,39
+
+1-4.cpp,15
+int main(4,39
+
+1-5.cpp,15
+int main(4,39
+
+1-6.cpp,15
+int main(4,39
+
+2-0.cpp,105
+using std::cout;4,39
+using std::cin;5,56
+using std::endl;6,72
+using std::string;7,89
+int main(9,109
+
+2-1.cpp,105
+using std::cout;4,39
+using std::cin;5,56
+using std::endl;6,72
+using std::string;7,89
+int main(9,109
+
+2-2.cpp,105
+using std::cout;4,39
+using std::cin;5,56
+using std::endl;6,72
+using std::string;7,89
+int main(9,109
+
+2-3.cpp,105
+using std::cout;4,39
+using std::cin;5,56
+using std::endl;6,72
+using std::string;7,89
+int main(9,109
+
+2-4.cpp,105
+using std::cout;4,39
+using std::cin;5,56
+using std::endl;6,72
+using std::string;7,89
+int main(9,109
+
+2-5.cpp,83
+using std::cout;4,39
+using std::endl;5,56
+using std::string;6,73
+int main(8,93
+
+3-0-1.cpp,278
+using std::cout;8,112
+using std::cin;9,129
+using std::string;10,145
+using std::sort;11,164
+using std::streamsize;12,181
+using std::setprecision;13,204
+using std::endl;14,229
+using std::vector;15,246
+int main(17,266
+  typedef vector<double>::size_type size_type36,647
+
+3-0.cpp,170
+using std::cin;6,73
+using std::cout;7,89
+using std::endl;8,106
+using std::setprecision;9,123
+using std::string;10,148
+using std::streamsize;11,167
+int main(13,191
+
+3-2.cpp,200
+using std::cout;5,60
+using std::endl;6,77
+using std::sort;7,94
+using std::cin;8,111
+std::vector<double> numbers;10,128
+int main(12,158
+  typedef std::vector<double>::size_type size_type21,302
+
+3-3.cpp,144
+using std::cin;6,78
+using std::cout;7,94
+using std::string;8,111
+int main(10,131
+  typedef std::vector<string>::size_type size_type20,343
+
+3-4.cpp,142
+using std::string;5,57
+using std::cin;6,76
+using std::cout;7,92
+int main(8,109
+  typedef std::vector<string>::size_type size_type18,287
+
+3-5.cpp,224
+using std::cout;8,112
+using std::cin;9,129
+using std::string;10,145
+using std::sort;11,164
+using std::streamsize;12,181
+using std::setprecision;13,204
+using std::endl;14,229
+using std::vector;15,246
+int main(17,266
+
+3-6.cpp,170
+using std::cin;6,73
+using std::cout;7,89
+using std::endl;8,106
+using std::setprecision;9,123
+using std::string;10,148
+using std::streamsize;11,167
+int main(13,191
+
+4-2.cpp,182
+using std::vector;5,58
+using std::string;6,77
+using std::streamsize;7,96
+using std::cout;8,119
+using std::endl;9,136
+using std::setw;10,153
+int main(15,190
+int digits(25,457
+
+4-4.cpp,182
+using std::vector;5,58
+using std::string;6,77
+using std::streamsize;7,96
+using std::cout;8,119
+using std::endl;9,136
+using std::setw;10,153
+int main(15,190
+int digits(25,457
+
+4-7.cpp,150
+using std::vector;4,39
+using std::endl;5,58
+using std::cout;6,75
+using std::cin;7,92
+typedef vector<double>::size_type sz;8,108
+int main(10,147
+
+b1-1.cpp,15
+int main(4,39
+
+hello_world.cpp,15
+int main(4,44
