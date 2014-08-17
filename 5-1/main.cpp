@@ -3,6 +3,7 @@
 #include <vector>
 #include <algorithm>
 #include <iomanip>
+#include <cctype>
 
 #include "split.h"
 
@@ -12,6 +13,18 @@ using std::string;
 using std::sort;
 using std::vector;
 using std::setw;
+using std::isupper;
+
+bool compare(const string& x, const string& y) {
+	if (isupper(x[0]) && islower(y[0])) {
+		return false;
+	}
+	else if (isupper(y[0]) && islower(x[0])) {
+		return true;
+	} else {
+		return x[0] < y[0];
+	}
+}
 
 vector<string> rotate(string s) {
 	vector<string> ret;
@@ -26,7 +39,7 @@ vector<string> rotate(string s) {
 		}
 		ret.push_back(permuted);
 	}
-	sort(ret.begin(), ret.end());
+	sort(ret.begin(), ret.end(), compare);
 	return ret;
 }
 
