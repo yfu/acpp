@@ -1,9 +1,15 @@
-#ifndef GUARD_fgrade_h
-#define GUARD_fgrade_h
+#ifndef GUARD_extract_fails_h
+#define GUARD_extract_fails_h
 
-#include <list>
+// predicate to determine whether a student failed
+/* bool fgrade(const Student_info& s) { */
+/* 	return grade(s) < 60; */
+/* } */
+
+#include <vector>
 #include "Student_info.h"
 
-bool fgrade(const Student_info& s);
-std::list<Student_info> extract_fails(std::list<Student_info>& students);
+// Separate passing and failing student records: first try
+std::vector<Student_info> extract_fails(std::vector<Student_info>& students);
+
 #endif

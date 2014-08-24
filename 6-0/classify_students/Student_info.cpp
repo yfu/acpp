@@ -1,6 +1,5 @@
-#include <vector>
-
 #include "Student_info.h"
+
 using std::istream;
 using std::vector;
 

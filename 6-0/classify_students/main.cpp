@@ -1,5 +1,4 @@
 #include <vector>
-#include <list>
 #include <stdexcept>
 #include <iostream>
 #include <string>
@@ -21,45 +20,50 @@ using std::endl;
 using std::istream;
 using std::setprecision;
 using std::max;
-using std::list;
 
 int main() {
-  list<Student_info> students;
+  vector<Student_info> students;
   Student_info record;
   string::size_type maxlen = 0;
 
-  while(read(cin, record)) {
+  while (read(cin, record)) {
     maxlen = max(maxlen, record.name.size());
     students.push_back(record);
   }
 
   // sort(students.begin(), students.end(), compare);
-  students.sort(compare);
-  // for(list<Student_info>::size_type i = 0; i != students.size(); i++) {
-  //   cout << students[i].name
-  // << string(maxlen + 1 - students[i].name.size(), ' ');
-  // }
+  cout << "Student names: " << endl;
+  for (vector<Student_info>::size_type i = 0; i<students.size(); ++i) {
+	  cout << students[i].name << endl;
+  }
+  
+  // Output the failing and passing students
+  vector<Student_info> fail = extract_fails(students);
+  vector<Student_info> pass = students;
 
-  list<Student_info> pass, fail;
-  fail = extract_fails(students);
-  pass = students;
-  cout << "Students who failed the exam:" << endl;
-  for (list<Student_info>::const_iterator i = fail.begin(); i != fail.end(); ++i) {
-	  cout << "Name: " << i->name << " Midterm: " << i->midterm << " Final exam: "
-		   << i->final << " Homework: ";
-	  for (vector<double>::size_type j = 0; j != i->homework.size(); ++j) {
-		  cout << i->homework[j] << " ";
+
+  if (!pass.empty()) {
+	  cout << "The students who passed the exam: " << endl;
+	  for (vector<Student_info>::size_type i = 0; i != pass.size(); ++i) {
+		  cout << pass[i].name << ": Final exam grade " << pass[i].final << " and Midterm grade " << pass[i].midterm
+			   << "and homework grades ";
+		  for(vector<double>::size_type j = 0; j != pass[i].homework.size(); ++j) {
+			  cout << pass[i].homework[j] << " ";
+		  }
+		  cout << endl;
 	  }
-	  cout << endl;
   }
 
-  cout << "Students who passed the exam:" << endl;
-  for (list<Student_info>::const_iterator i = students.begin(); i != students.end(); ++i) {
-	  cout << "Name: " << i->name << " Midterm: " << i->midterm << " Final exam: "
-		   << i->final << " Homework: ";
-	  for (vector<double>::size_type j = 0; j != i->homework.size(); ++j) {
-		  cout << i->homework[j] << " ";
+  if (!fail.empty()) {
+	  cout << "The students who failed the exam: " << endl;
+	  for (vector<Student_info>::size_type i = 0; i != fail.size(); ++i) {
+		  cout << fail[i].name << ": Final exam grade " << fail[i].final << " and Midterm grade " << fail[i].midterm
+			   << " and homework grades ";
+		  for (vector<double>::size_type j = 0; j != fail[i].homework.size(); ++j) {
+			  cout << fail[i].homework[j] << " ";
+		  }
+		  cout << endl;
 	  }
-	  cout << endl;
   }
+  return 0;
 }
